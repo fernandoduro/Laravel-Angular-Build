@@ -13,4 +13,15 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
+
+    mix.scripts([
+       	"angular/modules/angular.min.js",
+    	"angular/modules/angular-route.1.2.5.min.js",
+		"angular/modules/angular-sanitize.1.2.5.min.js",
+		"angular/modules/angular-moment.min.js",
+       	"angular/app.js",
+    ], 'public/js/angular.js') // Angular
+    mix.scripts([
+       "angular/controllers/test.js",
+    ], 'public/js/controllers.js') // Angular
 });
