@@ -1,2 +1,2 @@
-# CEU-Site
-Site do centro de empreendedorismo universitário.Unesp Bauru
+# Laravel-Angular-Build
+Template code para começar aplicações usando Laravel + Angularjs
