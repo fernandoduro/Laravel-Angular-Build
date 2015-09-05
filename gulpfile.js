@@ -16,12 +16,13 @@ elixir(function(mix) {
 
     mix.scripts([
        	"angular/modules/angular.min.js",
-    	"angular/modules/angular-route.1.2.5.min.js",
-		"angular/modules/angular-sanitize.1.2.5.min.js",
-		"angular/modules/angular-moment.min.js",
+      	"angular/modules/angular-route.1.2.5.min.js",
+	    	"angular/modules/angular-sanitize.1.2.5.min.js",
+	     	"angular/modules/angular-moment.min.js",
        	"angular/app.js",
-    ], 'public/js/angular.js') // Angular
+    ], 'public/js/angular.js') // Angular + app.js
     mix.scripts([
-       "angular/controllers/test.js",
-    ], 'public/js/controllers.js') // Angular
+       "angular/controllers/HomeController.js",
+       "angular/controllers/MainController.js",
+    ], 'public/js/controllers.js') // Controllers
 });

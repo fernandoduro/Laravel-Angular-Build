@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ceu" ng-controller="TestController">
+<html ng-app="ceu" ng-controller="MainController">
     <head>
         <title>Laravel</title>
 
@@ -38,7 +38,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                Laravel 5
+                <ng-view cache-view="false">
+                </ng-view>
             </div>
         </div>
     </body>

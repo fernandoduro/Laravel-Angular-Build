@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
+Route::get('/partials/home', function () {
+    return view('/partials/main/home');
 });
 
 Route::any('{all}', 'MainController@index')->where('all', '.*');
